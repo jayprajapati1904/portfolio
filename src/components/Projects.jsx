@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-
+import Skills from "./Skills";
 const Projects = () => {
   const projects = [
     {
@@ -34,8 +34,11 @@ const Projects = () => {
   ];
 
   return (
-    <section className="mt-10 py-16 bg-gradient-to-r from-purple-600 to-blue-500">
+    <section className="mt-10 py-16 bg-[#10172a]">
       <div className="container mx-auto text-center px-3">
+        {/* Skills Section */}
+        <Skills />
+
         <h2 className="text-3xl font-bold mb-12 text-white ">
           My <span className="text-green-300">Projects</span>
         </h2>

@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 text-white py-3 md:py-4 fixed top-0 left-0 w-full z-50 p-4 shadow-lg">
+    <nav className="bg-gray-700 text-white py-3 md:py-4 fixed top-0 left-0 w-full z-50 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="ml-2 text-2xl sm:text-xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 shadow-md">
+        <h1 className="ml-2 text-2xl sm:text-xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 ">
           Jay <span className="text-yellow-400">Prajapati</span>
         </h1>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
             to="/projects"
             className="hover:text-blue-400 transition duration-300"
           >
-            Projects
+            Projects & Skills
           </Link>
           <Link
             to="/about"
@@ -86,7 +86,7 @@ const Navbar = () => {
             className="block py-2 px-3 text-base md:text-lg text-white hover:bg-blue-600 hover:shadow-lg rounded-md transition duration-200 ease-in-out"
             onClick={toggleDrawer}
           >
-            Projects
+            Projects & Skills
           </Link>
           <Link
             to="/about"

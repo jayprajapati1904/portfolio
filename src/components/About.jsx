@@ -3,7 +3,7 @@ import CallToAction from "../components/CallToAction";
 
 const About = () => {
   return (
-    <section className="mt-10 min-h-screen flex items-center justify-center bg-gradient-to-r from-purple-600 to-blue-500">
+    <section className="mt-10 min-h-screen flex items-center justify-center bg-[#10172a]">
       <div className="max-w-2xl mx-auto p-3 text-center text-white">
         <div>
           <h1 className="text-3xl font-semibold text-center my-7">

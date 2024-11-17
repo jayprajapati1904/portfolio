@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <section
-      className="mt-0 h-screen bg-gradient-to-r from-purple-600 to-blue-500 text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
+      className="mt-0 h-screen bg-[#10172a] text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
       style={{ marginTop: "55px" }} // Adjust margin based on Navbar height
     >
       {/* Left Content */}
@@ -54,7 +54,7 @@ const Hero = () => {
         <div className="flex justify-center md:justify-start space-x-4 mt-8 lg:mt-10 lg:gap-6">
           {[
             {
-              href: "https://instagram.com/",
+              href: "https://www.instagram.com/j_a_y_1245/",
               icon: (
                 <FaInstagram
                   size={24}
@@ -64,7 +64,7 @@ const Hero = () => {
               hoverColor: "rgba(236, 72, 153, 1)", // Pink on Hover
             },
             {
-              href: "https://twitter.com/",
+              href: "https://x.com/jayprajapa1908",
               icon: (
                 <FaTwitter
                   size={24}
@@ -74,7 +74,7 @@ const Hero = () => {
               hoverColor: "rgba(56, 161, 243, 1)", // Light Blue on Hover
             },
             {
-              href: "https://linkedin.com/",
+              href: "https://www.linkedin.com/in/jay-prajapati-768213277/",
               icon: (
                 <FaLinkedin
                   size={24}
@@ -84,7 +84,7 @@ const Hero = () => {
               hoverColor: "rgba(10, 102, 194, 1)", // Dark Blue on Hover
             },
             {
-              href: "https://github.com/",
+              href: "https://github.com/jayprajapati1904",
               icon: (
                 <FaGithub
                   size={24}
@@ -122,11 +122,15 @@ const Hero = () => {
       </div>
       {/* Right Content - Illustration */}
       <div className="flex-1 mt-8 md:mt-0">
-        <img
-          src="/images/_5.jpg"
-          alt="Hero Illustration of my portfolio project"
-          className="w-full sm:w-3/4 md:w-4/5 mx-auto rounded-lg max-h-60 sm:max-h-80 object-contain transition-transform duration-300 hover:scale-105"
-        />
+        <div className="rounded-xl p-[3px] bg-gradient-to-r from-purple-600 to-blue-500 shadow-[0px_15px_50px_rgba(147,51,234,0.5)]">
+          <div className="bg-[#10172a] rounded-xl p-[5px]">
+            <img
+              src="/images/_5.jpg"
+              alt="Hero Illustration of my portfolio project"
+              className="w-full sm:w-3/4 md:w-4/5 mx-auto max-h-80 sm:max-h-80 object-contain transition-transform duration-300 hover:scale-105 rounded-xl"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
