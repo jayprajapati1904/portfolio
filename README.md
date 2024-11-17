@@ -1,6 +1,6 @@
 # Jay Prajapati's Portfolio
 
-Welcome to the personal portfolio of **Jay Prajapati**, a Computer Engineering student and a passionate web developer. This portfolio showcases my skills, projects, and contact information. It is built using **React** and **Tailwind CSS** to provide a responsive, modern, and visually appealing user interface.
+Welcome to my personal portfolio web site, i am a Computer Engineering student and a passionate web developer. This portfolio showcases my skills, projects, and contact information. It is built using **React** and **Tailwind CSS** to provide a responsive, modern, and visually appealing user interface.
 
 ## Live Demo
 
