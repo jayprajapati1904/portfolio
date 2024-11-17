@@ -80,13 +80,15 @@ const Contact = () => {
   return (
     <section className="mt-10 py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white">
       <div className="container mx-auto text-center px-4">
-        <h2 className="text-4xl font-bold mb-8">Contact Me</h2>
+        <h2 className="text-4xl font-bold mb-8">
+          <span className="text-red-400">Contact</span> Me
+        </h2>
 
         {/* Contact Info Section */}
         <div className="flex flex-wrap justify-center gap-8 mb-16">
           {/* Phone */}
           <div className="flex flex-col items-center p-6 rounded-lg transition-transform transform duration-300">
-            <a href="tel:+919429468900" className="cursor-pointer">
+            <a href="tel:9429468900" className="cursor-pointer">
               <div className="bg-blue-500 p-4 rounded-full transform transition duration-300 hover:scale-125 hover:shadow-[0_4px_20px_4px_rgba(59,130,246,0.8)]">
                 <FaPhoneAlt size={30} className="text-white" />
               </div>
@@ -119,16 +121,12 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Hours of Operation */}
-        <div className="bg-white bg-opacity-10 p-6 rounded-lg mb-8">
-          <h3 className="text-2xl font-semibold">Hours of Operation</h3>
-          <p>Monday - Friday: 9 AM - 6 PM IST</p>
-          <p>Saturday - Sunday: Closed</p>
-        </div>
-
         {/* Contact Form */}
         <div>
-          <h3 className="text-3xl font-semibold mb-6">Get in Touch</h3>
+          <h3 className="text-3xl font-semibold mb-6">
+            <span className="text-yellow-500">Get</span> in{" "}
+            <span className="text-pink-500">Touch</span>
+          </h3>
           <form
             className="max-w-lg mx-auto space-y-4"
             onSubmit={handleFormSubmit}
@@ -191,7 +189,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded shadow-lg hover:bg-opacity-90 focus:outline-none active:scale-110 transition duration-200 transform hover:shadow-xl hover:shadow-green-400"
+              className="bg-gradient-to-r from-blue-500 to-green-400 text-white px-6 py-3 rounded shadow-lg hover:bg-opacity-90 focus:outline-none active:scale-110 transition duration-200 transform hover:shadow-xl hover:shadow-green-400"
             >
               SEND MESSAGE
             </button>

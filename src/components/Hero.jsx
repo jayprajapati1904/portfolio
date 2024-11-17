@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <section
-      className="h-screen bg-gradient-to-r from-purple-600 to-blue-500 text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
+      className="mt-0 h-screen bg-gradient-to-r from-purple-600 to-blue-500 text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
       style={{ marginTop: "55px" }} // Adjust margin based on Navbar height
     >
       {/* Left Content */}
