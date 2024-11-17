@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { Drawer } from "antd";
 
 const Navbar = () => {
@@ -13,36 +13,57 @@ const Navbar = () => {
     <nav className="bg-gray-700 text-white py-3 md:py-4 fixed top-0 left-0 w-full z-50 p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="ml-2 text-2xl sm:text-xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500 ">
+        <h1 className="ml-2 text-2xl sm:text-xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
           Jay <span className="text-yellow-400">Prajapati</span>
         </h1>
 
         {/* Links for Large Screens */}
         <div className="hidden md:flex space-x-4">
-          <Link
-            to="/"
-            className="hover:text-purple-400 transition duration-300"
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={800}
+            offset={-70} // Adjust for navbar height
+            className="cursor-pointer hover:text-purple-400 transition duration-300"
           >
             Home
-          </Link>
-          <Link
-            to="/projects"
-            className="hover:text-blue-400 transition duration-300"
+          </ScrollLink>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={800}
+            offset={-70}
+            className="cursor-pointer hover:text-blue-400 transition duration-300"
           >
-            Projects & Skills
-          </Link>
-          <Link
-            to="/about"
-            className="hover:text-yellow-400 transition duration-300"
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            to="skills"
+            smooth={true}
+            duration={800}
+            offset={-70}
+            className="cursor-pointer hover:text-red-400 transition duration-300"
+          >
+            Skills
+          </ScrollLink>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={800}
+            offset={-70}
+            className="cursor-pointer hover:text-yellow-400 transition duration-300"
           >
             About
-          </Link>
-          <Link
-            to="/contact"
-            className="hover:text-green-400 transition duration-300"
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={800}
+            offset={-70}
+            className="cursor-pointer hover:text-green-400 transition duration-300"
           >
             Contact
-          </Link>
+          </ScrollLink>
         </div>
 
         {/* Hamburger Menu for Small Screens */}
@@ -74,34 +95,56 @@ const Navbar = () => {
         className="custom-drawer"
       >
         <div className="p-3">
-          <Link
-            to="/"
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={800}
+            offset={-70}
             className="block py-2 px-3 text-base md:text-lg text-white hover:bg-blue-600 hover:shadow-lg rounded-md transition duration-200 ease-in-out"
             onClick={toggleDrawer}
           >
             Home
-          </Link>
-          <Link
-            to="/projects"
+          </ScrollLink>
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={800}
+            offset={-70}
             className="block py-2 px-3 text-base md:text-lg text-white hover:bg-blue-600 hover:shadow-lg rounded-md transition duration-200 ease-in-out"
             onClick={toggleDrawer}
           >
-            Projects & Skills
-          </Link>
-          <Link
-            to="/about"
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            to="skills"
+            smooth={true}
+            duration={800}
+            offset={-70}
+            className="block py-2 px-3 text-base md:text-lg text-white hover:bg-blue-600 hover:shadow-lg rounded-md transition duration-200 ease-in-out"
+            onClick={toggleDrawer}
+          >
+            Skills
+          </ScrollLink>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={800}
+            offset={-70}
             className="block py-2 px-3 text-base md:text-lg text-white hover:bg-blue-600 hover:shadow-lg rounded-md transition duration-200 ease-in-out"
             onClick={toggleDrawer}
           >
             About
-          </Link>
-          <Link
-            to="/contact"
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={800}
+            offset={-70}
             className="block py-2 px-3 text-base md:text-lg text-white hover:bg-blue-600 hover:shadow-lg rounded-md transition duration-200 ease-in-out"
             onClick={toggleDrawer}
           >
             Contact
-          </Link>
+          </ScrollLink>
         </div>
       </Drawer>
     </nav>

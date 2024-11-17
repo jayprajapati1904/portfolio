@@ -55,16 +55,19 @@ const Skills = () => {
   ];
 
   return (
-    <section>
-      <h2 className="text-3xl font-bold mb-8 text-white">
-        My <span className="text-red-600">Skills</span>
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        {skills.map((skill, index) => (
-          <SkillBar key={index} skill={skill} />
-        ))}
-      </div>
-    </section>
+    <div id="skills" className="skills-container">
+      <section>
+        <h2 className="text-3xl font-bold mb-10 text-white text-center">
+          My <span className="text-red-600">Skills</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {skills.map((skill, index) => (
+            <SkillBar key={index} skill={skill} />
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 
