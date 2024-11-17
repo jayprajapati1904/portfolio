@@ -76,7 +76,7 @@ const Projects = () => {
 
           <a
             href="https://github.com/jayprajapati1904"
-            className="mt-10 px-3 flex items-center justify-center bg-gradient-to-r from-green-400 to-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+            className="mt-10 px-3 flex items-center justify-center w-max mx-auto bg-gradient-to-r from-green-400 to-red-500 text-white font-semibold py-2 rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
             target="_blank"
             rel="noopener noreferrer"
           >

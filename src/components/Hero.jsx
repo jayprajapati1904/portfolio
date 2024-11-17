@@ -2,20 +2,14 @@ import React from "react";
 import { Button } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { Typewriter } from "react-simple-typewriter";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Hero = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = () => {
-    navigate("/projects");
-  };
-
   return (
     <div id="home" className="hero-container">
       <section
-        className="mt-0 h-screen bg-[#10172a] text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
+        className="min-h-screen bg-[#10172a] text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
         style={{ marginTop: "55px" }} // Adjust margin based on Navbar height
       >
         {/* Left Content */}
@@ -41,15 +35,21 @@ const Hero = () => {
           <p className="text-lg md:text-xl mb-6">
             Computer Engineering Student | MERN Stack Developer
           </p>
-          <Button
-            type="primary"
-            size="large"
-            className="bg-yellow-300 text-gray-800 hover:bg-yellow-400 shadow-lg px-6 py-3"
-            icon={<ArrowRightOutlined />}
-            onClick={handleNavigate}
+          <Link
+            to="projects" // This should be the ID of your "Projects" section
+            smooth={true}
+            duration={800} // Duration of scroll in ms
+            offset={-70} // Optional, adjust the offset if needed
           >
-            View My Work
-          </Button>
+            <Button
+              type="primary"
+              size="large"
+              className="bg-yellow-300 text-gray-800 hover:bg-yellow-400 shadow-lg px-6 py-3"
+              icon={<ArrowRightOutlined />}
+            >
+              View My Work
+            </Button>
+          </Link>
 
           {/* Social Media Links */}
           <div className="flex justify-center md:justify-start space-x-4 mt-8 lg:mt-10 lg:gap-6">

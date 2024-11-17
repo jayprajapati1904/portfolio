@@ -13,9 +13,9 @@ import { SiTailwindcss, SiMongodb, SiFirebase } from "react-icons/si";
 const Skills = () => {
   const skills = [
     {
-      icon: <FaReact className="w-8 h-8 text-blue-500" />,
+      icon: <FaReact className="w-8 h-8 text-blue-700" />,
       percentage: 90,
-      colors: "from-blue-300 to-blue-500",
+      colors: "from-blue-300 to-blue-700",
     },
     {
       icon: <FaNodeJs className="w-8 h-8 text-green-500" />,
@@ -35,7 +35,7 @@ const Skills = () => {
     {
       icon: <SiTailwindcss className="w-8 h-8 text-blue-400" />,
       percentage: 95,
-      colors: "from-blue-200 to-blue-400",
+      colors: "from-blue-200 to-blue-600",
     },
     {
       icon: <SiFirebase className="w-8 h-8 text-yellow-400" />,
@@ -89,7 +89,7 @@ const SkillBar = ({ skill }) => {
   }, [skill.percentage]);
 
   return (
-    <div className="flex items-center bg-gradient-to-r from-red-500 to-green-500 rounded-full shadow-md p-6">
+    <div className="flex items-center bg-gradient-to-r from-pink-500 to-blue-400 rounded-full shadow-md p-6">
       {/* Skill Icon */}
       <div className="flex-shrink-0 mr-4">{skill.icon}</div>
 

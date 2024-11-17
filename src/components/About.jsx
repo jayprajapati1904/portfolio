@@ -27,7 +27,10 @@ const About = () => {
 
               <p>
                 On this portfolio, you'll find various projects I've worked on,
-                ranging from web development applications to data analysis
+                ranging from web development applications to{" "}
+                <span className="text-yellow-300 font-bold">
+                  data analysis{" "}
+                </span>
                 projects. I'm always eager to learn new technologies and share
                 my knowledge with others. My focus is on{" "}
                 <span className="text-yellow-300 font-bold">collaboration</span>{" "}
@@ -35,9 +38,10 @@ const About = () => {
               </p>
 
               <p>
-                I believe in the power of collaboration and community. Feel free
-                to browse my work, and connect with me. I'm always open to new
-                opportunities and collaborations!
+                I believe in the power of collaboration and{" "}
+                <span className="text-yellow-300 font-bold">community</span>.
+                Feel free to browse my work, and connect with me. I'm always
+                open to new opportunities and collaborations!
               </p>
             </div>
           </div>

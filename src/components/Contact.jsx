@@ -106,9 +106,14 @@ const Contact = () => {
 
             {/* City */}
             <div className="flex flex-col items-center p-6 rounded-lg transition-transform transform duration-300">
-              <div className="bg-purple-600 p-4 rounded-full transform transition duration-300 hover:scale-125 hover:shadow-[0_4px_20px_4px_rgba(120,71,239,0.8)]">
+              <a
+                href="https://www.google.com/maps?q=Ahmedabad, Gujarat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-purple-600 p-4 rounded-full transform transition duration-300 hover:scale-125 hover:shadow-[0_4px_20px_4px_rgba(120,71,239,0.8)]"
+              >
                 <FaMapMarkerAlt size={30} className="text-white" />
-              </div>
+              </a>
               <p className="mt-4 font-semibold">City:</p>
               <p>Ahmedabad, Gujarat</p>
             </div>
