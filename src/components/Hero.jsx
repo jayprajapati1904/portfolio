@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div id="home" className="hero-container">
       <section
-        className="min-h-screen bg-[#10172a] text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left overflow-y-scroll"
+        className="min-h-screen bg-[#10172a] text-white flex flex-col md:flex-row justify-center items-center px-4 md:px-16 md:mt-10 text-center md:text-left "
         style={{ marginTop: "55px" }} // Adjust margin based on Navbar height
       >
         {/* Left Content */}
